@@ -1,0 +1,6 @@
+# Cloudflare Workers runtime secrets
+# Copy this file to .dev.vars for local development
+# These are accessible via Astro.locals.runtime.env.SECRET_NAME
+
+# CONTACT_FORM_API_KEY=
+# ANALYTICS_TOKEN=

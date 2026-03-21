@@ -1,0 +1,11 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode"
+	},
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"files.associations": {
+		"*.css": "css"
+	}
+}
