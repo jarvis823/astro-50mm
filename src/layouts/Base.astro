@@ -11,11 +11,11 @@ const { title, description, image } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<BaseHead title={title} description={description} image={image} />
 	</head>
-	<body>
+	<body class="font-body selection:bg-primary selection:text-on-primary bg-background text-on-surface">
 		<slot />
 	</body>
 </html>
