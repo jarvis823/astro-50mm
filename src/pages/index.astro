@@ -11,6 +11,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '@/consts';
 ---
 
 <Landing title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<!--
+	  LCP image preload: tell the browser to fetch the Hero image immediately,
+	  before parsing the component HTML. Fixes "LCP request discovery" audit.
+	-->
+	<link
+		slot="head"
+		rel="preload"
+		as="image"
+		href="https://lh3.googleusercontent.com/aida-public/AB6AXuDJr5lyMWJyh8sC1WGIhaR3mjM1FYm9vyz5TXFrWkBgVBtz0275oVsIkPmETFXo3Z4zI8KNE0UFiQKM9TvDIlaK6thPtUwAt_ISKyBGKlI9p6NRm72gy0beKxHrKWiHpnpgyx5d89S4d2g9hXDW2QY-r1CscU3vGLgbIcMO4eotX51Giyhwm11d6y7u8xp0JWPIPxATxioNkvn5gjhAiaS7uoycvC9LjoQdorevYhVwQdNDn5B94Pf8sbvj29ZmKIlQNGnJoZPLqfK2"
+		fetchpriority="high"
+	/>
 	<Hero />
 	<LiveFeed />
 	<About />
